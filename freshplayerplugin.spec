@@ -5,7 +5,7 @@ Summary:	PPAPI-host NPAPI-plugin adapter
 
 License:	MIT
 URL:		https://github.com/i-rinat/freshplayerplugin
-Source0:	https://github.com/i-rinat/freshplayerplugin/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/i-rinat/freshplayerplugin/archive/v%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:	chrpath
