@@ -1,5 +1,5 @@
 Name:		freshplayerplugin
-Version:	0.3.3
+Version:	0.3.4
 Release:	1%{?dist}
 Summary:	PPAPI-host NPAPI-plugin adapter
 
@@ -67,6 +67,9 @@ find %{buildroot} -name "*" -exec chrpath --delete {} \; 2>/dev/null
 
 
 %changelog
+* Mon Dec 21 2015 Leigh Scott <leigh123linux@googlemail.com> - 0.3.4-2
+- update to 0.3.4
+
 * Sun Oct 11 2015 Leigh Scott <leigh123linux@googlemail.com> - 0.3.3-1
 - update to 0.3.3
 
