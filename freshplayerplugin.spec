@@ -1,5 +1,5 @@
 Name:		freshplayerplugin
-Version:	0.3.4
+Version:	0.3.5
 Release:	1%{?dist}
 Summary:	PPAPI-host NPAPI-plugin adapter
 
@@ -47,7 +47,7 @@ for browser.
 mkdir -p build
 pushd build
 %{cmake} ..
-make %{?_smp_mflags}
+%{make_build}
 popd
 
 %install
@@ -67,6 +67,9 @@ find %{buildroot} -name "*" -exec chrpath --delete {} \; 2>/dev/null
 
 
 %changelog
+* Sun Apr 17 2016 Leigh Scott <leigh123linux@googlemail.com> - 0.3.5-1
+- update to 0.3.5
+
 * Mon Dec 21 2015 Leigh Scott <leigh123linux@googlemail.com> - 0.3.4-2
 - update to 0.3.4
 
